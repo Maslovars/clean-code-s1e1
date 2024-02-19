@@ -6,28 +6,29 @@
     font-family: Lato, sans-serif;
 }
 
-.eisenhower-matrix {
+.matrix {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
 
-.eisenhower-matrix-img {
+.matrix__img {
     width: 100%;
 }
 
-.eisenhower-matrix .more-details {
+.matrix .matrix__details {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-.eisenhower-matrix { text-align: center;
+.matrix { 
+    text-align: center;
 }
 
 }
-.todo-main {
+.todo__main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -39,7 +40,7 @@
     flex-grow: 1
 }
 
-.task-row-wrapper {
+.add-task__wrapper {
     display: flex;
 }
 
@@ -143,13 +144,13 @@ li > input[type="text"] {
     width: 226px;
 }
 
-button.delete img {
+button.todo-list__delete-btn img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+button.todo-list__delete-btn img:hover {
     transform: rotateZ(0);
 }
 
@@ -165,11 +166,11 @@ ul li input[type=text] {
     display: none;
 }
 
-ul li.edit-mode input[type=text] {
+ul li.todo-list__edit-mode input[type=text] {
     display: inline-block;
     width: 224px;
 }
 
-ul li.edit-mode label {
+ul li.todo-list__edit-mode label {
     display: none;
 }
